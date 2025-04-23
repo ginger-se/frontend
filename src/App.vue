@@ -32,7 +32,7 @@ import { RouterLink, RouterView } from 'vue-router'
     </div>
     <div class="justify-center flex gap-4 m-auto ">
       <a href="https://github.com/ginger-se" target="_blank"><img src="/github-mark.png" alt="github" class="w-5 h-5"></a>
-      <a href="www.linkedin.com/in/justin-walraven-7b573a330" target="_blank"><img src="/LI-In-Bug.png" alt="linkedin" class="w-5 h-5"></a>
+      <a href="https://www.linkedin.com/in/jwall98" target="_blank"><img src="/LI-In-Bug.png" alt="linkedin" class="w-5 h-5"></a>
     </div>
 
   </footer>

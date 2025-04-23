@@ -9,7 +9,7 @@ import Card from '@/components/ui/custom/card/Card.vue';
     name="Justin Walraven"
     description="Computer Science Student at Oklahoma Christian University. Enjoys writing code and solving complex problems. Currently
      works as a programming tutor at OC where he helps students understand concepts, finish projects, and debug their code. 
-     other intrests include bouldering, studying theology, working out, and watching football." 
+     Other intrests include bouldering, studying theology, working out, and watching football." 
     image="headshot.jpg"
     />
     <a target="_blank" href="WalravenResume.pdf" >
