@@ -73,11 +73,12 @@ onClickOutside(target, closeVideo);
             />
             
         </div>
-        <div v-if="props.video" v-show="play"  class=" fixed left-0 top-0 z-10 bg-gray-700/50 h-screen w-screen flex justify-center items-center">
-            <video  ref="videoRef" :src="video" muted controls class="m-auto w-2/3" >
+        <div v-if="props.video" v-show="play"  class=" fixed left-0 top-0 z-10 bg-gray-700/80 h-screen w-screen flex justify-center items-center">
+            <h1 class="fixed top-0 text-2xl text-bold text-white">Click outside video to exit</h1>
+            <video  ref="videoRef" :src="video" muted controls class="m-auto w-2/3 max-h-9/10" >
                 Your browser does not support the video tag.
             </video>
-            <h1>Click background to exit</h1>
+            
         </div>
     </div>
 </template>
