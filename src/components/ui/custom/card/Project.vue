@@ -3,6 +3,10 @@ import { ref } from 'vue';
 import Button from '../../button/Button.vue';
 import { onClickOutside } from '@vueuse/core';
 import { CirclePlay } from 'lucide-vue-next';
+import { useWindowSize } from '@vueuse/core'
+
+const { width, height } = useWindowSize();
+
 const props = defineProps({
   name: {
     type: String,
@@ -43,6 +47,18 @@ let videoRef=ref(null);
                 }
 
         }
+        if(width.value < 450){
+            if (videoRef.value.requestFullscreen) {
+                videoRef.value.requestFullscreen();
+                } 
+            else if (videoRef.value.mozRequestFullScreen) { /* Firefox */
+                videoRef.value.mozRequestFullScreen();
+            } else if (videoRef.value.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+                videoRef.value.webkitRequestFullscreen();
+            } else if (videoRef.value.msRequestFullscreen) { /* IE/Edge */
+                videoRef.value.msRequestFullscreen();
+            }
+        }
 
     }
   function  closeVideo() {
@@ -65,6 +81,7 @@ onClickOutside(target, closeVideo);
             <h5 class="text-md font-bold ">Stack: {{language}}</h5>
             <p class="text-sm ">{{description}}</p>
             <a :href="link" target="_blank" v-if="link"><Button  variant="outline">Click to try project</Button></a>
+            <h5 v-if="props.video" class="text-sm font-bold ">Click on image to play video</h5>
         </div>
         <div class="max-h-full min-h-50 relative" @click="playVideo()" >
             <img v-if="image" :src="image" alt="image"   class="border  shadow-md">

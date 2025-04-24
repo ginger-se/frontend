@@ -27,8 +27,8 @@ import { RouterLink, RouterView } from 'vue-router'
   <footer class="border-t min-h-20 grid grid-cols-1 md:w-1/2 md:grid-cols-2 mx-auto">
     <div class="items-center flex flex-col m-auto">
 
-      <p>Email: j.walraven@eagles.oc.edu</p>
-      <p>Phone: 405-795-6212</p>
+      <p class="text-nowrap">Email: j.walraven@eagles.oc.edu</p>
+      <p class="text-nowrap">Phone: 405-795-6212</p>
     </div>
     <div class="justify-center flex gap-4 m-auto ">
       <a href="https://github.com/ginger-se" target="_blank"><img src="/github-mark.png" alt="github" class="w-5 h-5"></a>
