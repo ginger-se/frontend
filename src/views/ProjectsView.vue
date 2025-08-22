@@ -28,7 +28,6 @@ import Project from '@/components/ui/custom/card/Project.vue';
       language="Vue 3 with Express and MariaDB"
       description="To do list web application that allows users to create, update, and delete lists and list items."
       image="TodoImage.png"
-      link="http://ec2-3-135-187-109.us-east-2.compute.amazonaws.com/todo-frontend-vue3/#/"
       >
       
     </Project>
