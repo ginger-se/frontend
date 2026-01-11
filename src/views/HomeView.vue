@@ -8,7 +8,7 @@ import Card from '@/components/ui/custom/card/Card.vue';
     <Card 
     name="Justin Walraven"
     description="Computer Science Student at Oklahoma Christian University. Enjoys writing code and solving complex problems. Currently
-     working as a web developer intern at the Oklahoma Tourism and Recreation Department and as a programming tutor at Oklahoma Christian University.
+     working as a Software Engineer Intern at Zden Technologies LLC and as a programming tutor at Oklahoma Christian University.
      Other intrests include bouldering, studying theology, working out, and watching football." 
     image="headshot.jpg"
     />
